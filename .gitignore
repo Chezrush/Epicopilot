@@ -1,0 +1,159 @@
+# -----------------------------------------------------------------------------
+# Assistants IA (Claude Code, Ruflo / claude-flow…)
+# -----------------------------------------------------------------------------
+.claude/
+.claude-flow/
+.swarm/
+.hive-mind/
+.mcp.json
+ruvector.db
+*.db
+*.sqlite
+*.sqlite3
+CLAUDE.md
+CLAUDE.local.md
+memory/
+
+# -----------------------------------------------------------------------------
+# Secrets et configuration locale
+# On garde uniquement le modèle documenté .env.example
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.python-version
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# -----------------------------------------------------------------------------
+# Node / Web (station de contrôle)
+# -----------------------------------------------------------------------------
+node_modules/
+.npm/
+.pnpm-store/
+.next/
+.nuxt/
+.vite/
+.turbo/
+out/
+web/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Tests E2E (Playwright / Cypress)
+playwright-report/
+test-results/
+blob-report/
+cypress/videos/
+cypress/screenshots/
+
+# -----------------------------------------------------------------------------
+# IA : datasets, poids de modèles, logs d'entraînement
+# Trop lourds pour Git + contiennent potentiellement des personnes (RGPD).
+# Les poids pré-entraînés se téléchargent via un script d'installation.
+# -----------------------------------------------------------------------------
+IA/training/data/
+IA/training/datasets/
+IA/training/recordings/
+IA/training/checkpoints/
+datasets/
+recordings/
+captures/
+
+# Poids de modèles (PyTorch, ONNX, TensorRT, Ultralytics…)
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.trt
+*.safetensors
+*.bin
+*.h5
+*.tflite
+
+# Suivi d'expériences
+runs/
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+outputs/
+
+# Données brutes
+*.npy
+*.npz
+*.parquet
+*.h5py
+*.hdf5
+*.tfrecord
+
+# -----------------------------------------------------------------------------
+# Vidéos et enregistrements de vol (DVR, captures d'écran du simulateur)
+# -----------------------------------------------------------------------------
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.webm
+*.bbl
+*.bfl
+
+# -----------------------------------------------------------------------------
+# Logs et fichiers temporaires
+# -----------------------------------------------------------------------------
+logs/
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# -----------------------------------------------------------------------------
+# Éditeurs / IDE
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.code-workspace
+.fleet/
+.cursor/
+
+# -----------------------------------------------------------------------------
+# Systèmes d'exploitation
+# -----------------------------------------------------------------------------
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# -----------------------------------------------------------------------------
+# Fichiers Office temporaires (ouverture du .pptx de l'énoncé)
+# -----------------------------------------------------------------------------
+~$*
