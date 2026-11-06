@@ -1,0 +1,38 @@
+[project]
+name = "epicopilot"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "mss>=10.2.0",
+    "numpy>=2.5.4",
+    "opencv-python>=5.0.0.93",
+    "pyyaml>=6.0.3",
+    "torch>=2.15.0",
+    "transformers>=5.22.1",
+    "ultralytics>=8.4.203",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["ia"]
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
+markers = [
+    "slow: charge un vrai modèle (YOLO, Depth Anything) — lent, lancer avec -m slow",
+    "hardware: nécessite une webcam ou un écran — lancer avec -m hardware",
+]
+addopts = "--import-mode=importlib -m 'not slow and not hardware'"
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["docs"]
