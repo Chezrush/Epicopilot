@@ -36,3 +36,6 @@ addopts = "--import-mode=importlib -m 'not slow and not hardware'"
 [tool.ruff]
 line-length = 100
 extend-exclude = ["docs"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["ia"]
