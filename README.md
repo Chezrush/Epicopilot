@@ -71,7 +71,7 @@ Le projet suit quatre étapes, calées sur les suivis obligatoires de l'énoncé
 
 ### Étape 1 — Setup *(novembre 2026, Suivi 1)*
 
-- [ ] Simuler la radiocommande : manette virtuelle qui envoie les 4 axes (Roll, Pitch, Yaw, Throttle) au simulateur
+- [x] Simuler la radiocommande : manette virtuelle qui envoie les 4 axes (Roll, Pitch, Yaw, Throttle) au simulateur
 - [ ] Capturer le flux vidéo du simulateur
 - [ ] Choisir le modèle de base et préparer son fine-tuning
 - [ ] Mettre en place toute l'infrastructure IA pour pouvoir lancer l'entraînement : environnement, pipeline de données, scripts
@@ -135,7 +135,7 @@ Cette section décrira pas à pas :
 
 | Outil / modèle | Utilisation |
 |---|---|
-| *à compléter* | *code, tests, documentation, poids de modèles…* |
+| *Model maison de réseau de neurone* | *code, tests, documentation, poids de modèles…* |
 
 ## Équipe
 
